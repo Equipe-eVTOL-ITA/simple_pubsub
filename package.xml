@@ -1,19 +1,27 @@
 <package format="3">
-  <name>pubsub</name>
+  <!-- NOME DO PACOTE -->
+  <name>  </name>
   <version>0.0.0</version>
-  <description>Descricao do pacote</description>
-  <maintainer email="yago@todo.todo">yago</maintainer>
-  <license>TODO: License declaration</license>
+  <!-- DESCRICAO DO PACOTE -->
+  <description>  </description>
+  <!-- MAINTAINER -->
+  <maintainer email="  ">  </maintainer>
+  <license>MIT</license>
 
-  <buildtool_depend>ament_python</buildtool_depend>
+  <!-- DEPENDENCIA DE BUILD -->
+  <buildtool_depend>  </buildtool_depend>
 
-  <exec_depend>rclpy</exec_depend>
-  <exec_depend>std_msgs</exec_depend>
 
+  <!-- DEPENDENCIAS DE EXECUCAO -->
+  <exec_depend>  </exec_depend>
+  <exec_depend>  </exec_depend>
+
+  <!-- DEPENDENCIAS DE TESTE -->
   <test_depend>python3-pytest</test_depend>
   <test_depend>ament_lint_auto</test_depend>
 
   <export>
-    <build_type>ament_python</build_type>
+    <!-- TIPO DO BUILD -->
+    <build_type>  </build_type>
   </export>
 </package>
