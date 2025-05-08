@@ -1,6 +1,7 @@
 # Importar ros2 class for python
-
+import rclpy
 # Importar a classe Node do rclpy
+from rclpy.node import Node
 
 from std_msgs.msg import String
 
@@ -28,9 +29,9 @@ class MinimalPublisher(Node):
 def main(args=None):
     rclpy.init(args=args)
     # Criar o nó (objeto) da classe MinimalPublisher
-    node = MinimalPublisher()
-    rclpy.spin(node)
-    node.destroy_node()
+
+    #rclpy.spin(node)
+    #node.destroy_node()
     rclpy.shutdown()
 
 if __name__ == '__main__':
