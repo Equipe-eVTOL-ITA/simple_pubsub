@@ -1,4 +1,0 @@
-[console_scripts]
-publisher_node = velocity_control.publisher_node:main
-subscriber_node = velocity_control.subscriber_node:main
-
