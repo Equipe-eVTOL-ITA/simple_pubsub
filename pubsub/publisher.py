@@ -1,23 +1,33 @@
-import rclpy
-from rclpy.node import Node
+# Importar ros2 class for python
+
+# Importar a classe Node do rclpy
+
 from std_msgs.msg import String
 
 class MinimalPublisher(Node):
     def __init__(self):
-        super().__init__('minimal_publisher')
-        self.publisher_ = self.create_publisher(String, 'topic', 10)
-        self.timer = self.create_timer(1.0, self.timer_callback)
-        self.counter = 0
+        pass
+        # Inicilizar o no
+
+        # Criar publisher
+
+        # Criar timer com a função de callback
+
 
     def timer_callback(self):
-        msg = String()
-        msg.data = f'Hello, ROS 2! {self.counter}'
-        self.publisher_.publish(msg)
-        self.get_logger().info(f'Publishing: "{msg.data}"')
-        self.counter += 1
+        pass
+        # Inicilizar mensagem
+
+        # Popular data da mensagem
+
+        # Publicar a mensagem
+
+        # Logar no console que a mensagem foi publicada
+
 
 def main(args=None):
     rclpy.init(args=args)
+    # Criar o nó (objeto) da classe MinimalPublisher
     node = MinimalPublisher()
     rclpy.spin(node)
     node.destroy_node()
