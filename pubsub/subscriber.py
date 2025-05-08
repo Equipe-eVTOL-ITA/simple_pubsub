@@ -4,18 +4,16 @@ from std_msgs.msg import String
 
 class MinimalSubscriber(Node):
     def __init__(self):
-        pass
-        # Inicilizar o nó
-        
-        # Criar subscriber
-        
-        # Chamar a função de callback quando uma mensagem for recebida
-
+        super().__init__('minimal_subscriber')
+        self.subscription = self.create_subscription(
+            String,
+            'dronezada',
+            self.listener_callback,
+            10)
+        self.subscription
 
     def listener_callback(self, msg):
-        pass
-        # Logar no console que a mensagem foi recebida
-
+        self.get_logger().info(f'I heard: "{msg.data}"')
 
 def main(args=None):
     rclpy.init(args=args)
